@@ -1,0 +1,150 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ERP for Project Distribution of SRMS College</title>
+    <style>
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+.f {
+    display: flex;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+.nav {
+    padding: 10px;
+    background-color: blue;
+}
+
+.h1 {
+    color: white;
+    font-size: x-large;
+}
+.HAC{
+    font-family: 'Times New Roman';
+    padding: 5px;
+    font-size:medium;
+    border-radius: 5px;
+    background-color: lawngreen;
+}
+.contain{
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.show{
+  align-content: center;
+  margin-left: 45%;
+}
+    </style>
+</head>
+<body>
+    <nav class="f jcb aci nav">
+        <div>
+            <h1 class="h1">ERP for Project Distribution</h1>
+            
+        </div>
+	
+        <div>
+            <!-- <button onclick="document.getElementById('id01').style.display='block',document.getElementById('id02').style.display='none'" class="Lbtn">SignUp</button> -->
+            <button onclick="document.getElementById('F1').style.display='block',document.getElementById('id01').style.display='none'" class="Sbtn">Login</button>
+        </div>
+    </nav>
+    <form action="" method="post" >
+        {% csrf_token %}
+        
+
+<div class="container">
+    <span>
+        <center><img src="{% static 'img1.png' %}" height="100px" width="100px"></center>
+    </span>
+    <br>
+    <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+    </div>
+    <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+    </div>
+    <button  type="submit" >Login</button>
+     
+     
+  
+    </div>
+</div>
+</form>
+
+ 
+</body>
+</html>
